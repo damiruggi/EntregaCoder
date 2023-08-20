@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Roboto+Slab:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+/* Tipografías */ 
+h1{
+    font-family: Roboto Slab;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+    color: #363636;
+    padding-bottom: 64px;
+}
+
+h1.light{
+    font-family: Roboto Slab;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+    color: #ffffff;
+    padding-bottom: 64px;
+}
+
+h2{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+h3{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+h3.secondary{
+    color: #CCA43B;
+}
+
+p{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+p.dark{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    color: #363636;
+}
+
+p.maintitle{
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 46px;
+    color: #FFFFFF;
+}
+
+p.maintitleDark{
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 46px;
+    color: #363636;
+}
+
+p.captionlight{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+p.captiondark{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    color: #363636;
+}
+
+
+span.secondary{
+    color: #CCA43B;
+}
+
+span.terciary{
+    color: #363636;
+}
+
+p.legal{
+    font-family: Roboto Slab;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    color: #363636;
+}
+
+a{
+    text-decoration: none;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+a.light{
+    color: #FFFFFF;
+}
+
+a.dark{
+    color: #363636;
+}
+
+a:hover{
+    color: #CCA43B;
+}
+
+
+
+
+/* Header */ 
+header{
+    padding: 20px;
+    background-color: #E5E5E5;
+    height: 64px;
+    display:flex;
+    justify-content: space-between;
+}
+
+
+header div{
+    justify-content:left
+}
+
+nav{
+    padding: 9px 0px;
+    justify-content:flex-end;
+}
+
+nav ul li{
+    margin: 0 32px;
+    display: inline-block;
+}
+
+nav ul li a{
+    color: #363636;
+}
+
+nav ul li a:hover{
+    color: #CCA43B;
+}
+
+
+
+
+
+
+
+
+
+/* Noticias */
+.noticias{
+    background-color: #FFFFFF;
+    border: 1 solid #363636;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+
+.noticias p{
+    color: #363636;
+}
+
+
+
+
+
+
+
+
+
+
+/* Main */
+main{
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content: space-between;
+    padding: 64px;
+}
+
+
+.contenedor{
+    flex-direction: column;
+    position: relative;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: left;
+    align-content: left;
+}
+
+form div{
+    padding-bottom: 16px;
+}
+
+div.imagenPrimaria{
+    position: relative;
+}
+
+
+div.imagenPrimaria img{
+    position: sticky;
+}
+
+.etiqueta{
+    background-color: #CCA43B;
+    padding: 4px 8px;
+    display: inline-block;
+}
+
+.checkbox{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+/* Módulo 1 */ 
+.modulo1{
+    background-color:#363636;
+    padding: 64px;
+}
+
+
+.carrousel div {
+    display: flex;
+}
+
+
+.carrousel div img{
+    width: 100%;
+}
+
+
+.moduloTitle{
+    display: flex;
+    justify-content: space-between;
+}
+
+.preguntas div{
+    padding-bottom: 32px;
+}
+
+.fa-chevron-down{
+    color: #FFFFFF;
+    width: 24px;
+}
+
+
+
+
+
+
+/* Módulo 2 */ 
+.modulo2{
+    background-color:#CCA43B;
+    padding: 64px;
+}
+
+
+.carrousel div {
+    display: flex;
+}
+
+
+.carrousel div img{
+    width: 100%;
+}
+
+
+.moduloTitle{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+/* Módulo 3 */ 
+.modulo3{
+    background-color:#E5E5E5;
+    padding: 64px;
+}
+
+.titleModulo3{
+    text-align: center;
+}
+
+.cajas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cajalight{
+    border: 2px solid #363636;
+    padding: 16px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cajadark{
+    background-color: #363636;
+    padding: 16px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cajadark div{
+    flex-direction: column;
+}
+
+.servicios{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer{
+    background-color:#FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 64px;
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+}
+
+
+footer div ul li{
+    list-style: none;
+    display: inline-flex;
+}
+
+footer div ul li a i{
+    width:24px;
+    height: 24px;
+}
+
+
+
+
+
+
+
+
+/* Contacto */
+.headerDark{
+    padding: 20px;
+    background-color: #363636;
+    height: 64px;
+    display:flex;
+    justify-content: space-between;
+}
+
+
+.headerDark div{
+    justify-content:left
+}
+
+.headerDark nav{
+    padding: 9px 0px;
+    justify-content:flex-end;
+}
+
+.headerDark nav ul li{
+    margin: 0 32px;
+    display: inline-block;
+}
+
+.headerDark nav ul li a{
+    color: #FFFFFF;
+}
+
+.headerDark nav ul li a:hover{
+    color: #CCA43B;
+}
+
+
+.mainDark{
+    background-color: #363636;
+    display: flex;
+    justify-content: space-between;
+    padding: 64px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.mainDark a{
+    color: #ffffff;
+}
+
+
+.mainDark a:hover{
+    color: #CCA43B;
+}
+
+main.mainDark div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+main.mainDark div div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: left;
+}
+
+
+
+.mainDark div form{
+    color: #FFFFFF;
+}
+
+.mainDark div form div{
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainDark div form div{
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: row;
+}
+.mainDark div form div{
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.checkbox{
+    display: flex;
+}
