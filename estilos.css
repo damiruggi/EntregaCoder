@@ -12,7 +12,12 @@ html{
 }
 
 
+@media only screen and (max-width:3500px){
 
+
+.col-lg-2{
+    width: 50%;
+}
 
 /* Tipografías */ 
 h1{
@@ -141,41 +146,65 @@ a:hover{
     color: #CCA43B;
 }
 
-
-
-
-/* Header */ 
-header{
-    padding: 20px;
-    background-color: #E5E5E5;
-    height: 64px;
-    display:flex;
-    justify-content: space-between;
+.accordion-header button{
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color:#363636;
 }
 
-
-header div{
-    justify-content:left
+.accordion-button:not(.collapsed){
+    background-color: #363636;
 }
 
-nav{
-    padding: 9px 0px;
-    justify-content:flex-end;
-}
-
-nav ul li{
-    margin: 0 32px;
-    display: inline-block;
-}
-
-nav ul li a{
-    color: #363636;
-}
-
-nav ul li a:hover{
+.accordion-button:not(.collapsed){
     color: #CCA43B;
 }
 
+.accordion-body{
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.accordion-item{
+    background-color: #363636;}
+
+
+.row{
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.imagenPrimaria img{
+    position: sticky;
+    height: auto;
+    width: 100%;
+}
+
+/* Header */ 
+
+.bg-light{
+    background-color: #E5E5E5 !important;
+}
+
+
+.navbar{
+    display: flex;
+    
+}
+
+.nav-item{
+    margin: 0 32px;
+}
+
+.nav-link{
+    color: #363636;
+}
+
+.nav-link:hover{
+    color: #CCA43B;
+}
 
 
 
@@ -204,15 +233,10 @@ nav ul li a:hover{
 
 
 
-
-
-
 /* Main */
 main{
     background-color: #E5E5E5;
-    display: flex;
-    justify-content: space-between;
-    padding: 64px;
+    padding-bottom: 64px;
 }
 
 
@@ -240,6 +264,8 @@ div.imagenPrimaria{
 
 div.imagenPrimaria img{
     position: sticky;
+    height: auto;
+    width: 100%;
 }
 
 .etiqueta{
@@ -255,7 +281,9 @@ div.imagenPrimaria img{
 
 
 
-
+hr{
+    color: #FFFFFF;
+}
 
 
 
@@ -275,6 +303,10 @@ div.imagenPrimaria img{
 .carrousel div img{
     width: 100%;
 }
+
+.accordion-button::after {
+    filter: grayscale(100%);
+} 
 
 
 .moduloTitle{
@@ -320,10 +352,6 @@ div.imagenPrimaria img{
 
 
 
-
-
-
-
 /* Módulo 3 */ 
 .modulo3{
     background-color:#E5E5E5;
@@ -332,11 +360,12 @@ div.imagenPrimaria img{
 
 .titleModulo3{
     text-align: center;
+    padding-bottom: 64px;
 }
 
+
 .cajas{
-    display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .cajalight{
@@ -346,6 +375,7 @@ div.imagenPrimaria img{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 650px;
 }
 
 .cajadark{
@@ -355,21 +385,13 @@ div.imagenPrimaria img{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 650px;
 }
 
-.cajadark div{
-    flex-direction: column;
-}
 
 .servicios{
-    display: flex;
-    justify-content: space-between;
+    padding-top: 64px;
 }
-
-
-
-
-
 
 
 
@@ -378,31 +400,32 @@ div.imagenPrimaria img{
 /* Footer */
 footer{
     background-color:#FFFFFF;
-    display: flex;
-    justify-content: space-between;
     padding: 64px;
 }
 
-footer div{
-    display: flex;
-    flex-direction: column;
+footer .logo{
+    padding-bottom: 32px;
 }
 
+footer div ul{
+    padding: 0;
+}
 
 footer div ul li{
     list-style: none;
     display: inline-flex;
+    padding-right: 16px;
 }
 
-footer div ul li a i{
-    width:24px;
-    height: 24px;
+footer div ul li i{
+    font-size: 24px;
+    color: #CCA43B;
 }
 
-
-
-
-
+footer div ul li i:hover{
+    font-size: 24px;
+    color: #363636;
+}
 
 
 
@@ -496,4 +519,394 @@ main.mainDark div div{
 
 .checkbox{
     display: flex;
+}
+
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(12, 600px);
+}
+
+.item{
+    background-size: cover;
+    background-position: center;
+}
+
+.item1{
+    background-image: url(images/imagen_2.webp);
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.item2{
+    background-image: url(images/imagen_3.webp);
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.item3{
+    background-image: url(images/imagen_4.webp);
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.item4{
+    background-image: url(images/imagen_5.webp);
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.item5{
+    background-image: url(images/imagen_6.webp);
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.item6{
+    background-image: url(images/imagen_7.webp);
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+.item7{
+    background-image: url(images/imagen_8.webp);
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.item8{
+    background-image: url(images/imagen_9.webp);
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.item9{
+    background-image: url(images/imagen_10.webp);
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+.item10{
+    background-image: url(images/imagen_11.webp);
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+.item11{
+    background-image: url(images/imagen_12.webp);
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+.item12{
+    background-image: url(images/imagen_13.webp);
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+.item13{
+    background-image: url(images/imagen_16.webp);
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+.item14{
+    background-image: url(images/imagen_17.webp);
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+.item15{
+    background-image: url(images/imagen_18.webp);
+    grid-column: 3/4;
+    grid-row: 5/6;
+}
+.item16{
+    background-image: url(images/imagen_19.webp);
+    grid-column: 1/2;
+    grid-row: 6/7;
+}
+.item17{
+    background-image: url(images/imagen_20.webp);
+    grid-column: 2/3;
+    grid-row: 6/7;
+}
+.item18{
+    background-image: url(images/imagen_21.webp);
+    grid-column: 3/4;
+    grid-row: 6/7;
+}
+.item19{
+    background-image: url(images/imagen_22.webp);
+    grid-column: 1/2;
+    grid-row: 7/8;
+}
+.item20{
+    background-image: url(images/imagen_23.webp);
+    grid-column: 2/3;
+    grid-row: 7/8;
+}
+.item21{
+    background-image: url(images/imagen_24.webp);
+    grid-column: 3/4;
+    grid-row: 7/8;
+}
+.item22{
+    background-image: url(images/imagen_28.webp);
+    grid-column: 1/2;
+    grid-row: 8/9;
+}
+.item23{
+    background-image: url(images/imagen_29.webp);
+    grid-column: 2/3;
+    grid-row: 8/9;
+}
+.item24{
+    background-image: url(images/imagen_30.webp);
+    grid-column: 3/4;
+    grid-row: 8/9;
+}
+.item25{
+    background-image: url(images/imagen_31.webp);
+    grid-column: 1/2;
+    grid-row: 9/10;
+}
+.item26{
+    background-image: url(images/imagen_32.webp);
+    grid-column: 2/3;
+    grid-row: 9/10;
+}
+.item27{
+    background-image: url(images/imagen_33.webp);
+    grid-column: 3/4;
+    grid-row: 9/10;
+}
+.item28{
+    background-image: url(images/imagen_37.webp);
+    grid-column: 1/2;
+    grid-row: 10/11;
+}
+.item29{
+    background-image: url(images/imagen_38.webp);
+    grid-column: 2/3;
+    grid-row: 10/11;
+}
+.item30{
+    background-image: url(images/imagen_39.webp);
+    grid-column: 3/4;
+    grid-row: 10/11;
+}
+.item31{
+    background-image: url(images/imagen_40.webp);
+    grid-column: 1/2;
+    grid-row: 11/12;
+}
+.item32{
+    background-image: url(images/imagen_41.webp);
+    grid-column: 2/3;
+    grid-row: 11/12;
+}
+.item33{
+    background-image: url(images/imagen_42.webp);
+    grid-column: 3/4;
+    grid-row: 11/12;
+}
+.item34{
+    background-image: url(images/imagen_43.webp);
+    grid-column: 1/2;
+    grid-row: 12/13;
+}
+.item35{
+    background-image: url(images/imagen_44.webp);
+    grid-column: 2/3;
+    grid-row: 12/13;
+}
+.item36{
+    background-image: url(images/imagen_45.webp);
+    grid-column: 3/4;
+    grid-row: 12/13;
+}
+
+}
+
+
+
+@media only screen and (max-width:768px){
+.col-lg-2{
+    width: 100%;
+}
+.galeria{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(36, 200px);
+}
+
+.item1{
+    background-image: url(images/imagen_2.webp);
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.item2{
+    background-image: url(images/imagen_3.webp);
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.item3{
+    background-image: url(images/imagen_4.webp);
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.item4{
+    background-image: url(images/imagen_5.webp);
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+.item5{
+    background-image: url(images/imagen_6.webp);
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+.item6{
+    background-image: url(images/imagen_7.webp);
+    grid-column: 1/2;
+    grid-row: 6/7;
+}
+.item7{
+    background-image: url(images/imagen_8.webp);
+    grid-column: 1/2;
+    grid-row: 7/8;
+}
+.item8{
+    background-image: url(images/imagen_9.webp);
+    grid-column: 1/2;
+    grid-row: 8/9;
+}
+.item9{
+    background-image: url(images/imagen_10.webp);
+    grid-column: 1/2;
+    grid-row: 9/10;
+}
+.item10{
+    background-image: url(images/imagen_11.webp);
+    grid-column: 1/2;
+    grid-row: 10/11;
+}
+.item11{
+    background-image: url(images/imagen_12.webp);
+    grid-column: 1/2;
+    grid-row: 11/12;
+}
+.item12{
+    background-image: url(images/imagen_13.webp);
+    grid-column: 1/2;
+    grid-row: 12/13;
+}
+.item13{
+    background-image: url(images/imagen_16.webp);
+    grid-column: 1/2;
+    grid-row: 13/14;
+}
+.item14{
+    background-image: url(images/imagen_17.webp);
+    grid-column: 1/2;
+    grid-row: 14/15;
+}
+.item15{
+    background-image: url(images/imagen_18.webp);
+    grid-column: 1/2;
+    grid-row: 15/16;
+}
+.item16{
+    background-image: url(images/imagen_19.webp);
+    grid-column: 1/2;
+    grid-row: 16/17;
+}
+.item17{
+    background-image: url(images/imagen_20.webp);
+    grid-column: 1/2;
+    grid-row: 17/18;
+}
+.item18{
+    background-image: url(images/imagen_21.webp);
+    grid-column: 1/2;
+    grid-row: 18/19;
+}
+.item19{
+    background-image: url(images/imagen_22.webp);
+    grid-column: 1/2;
+    grid-row: 19/20;
+}
+.item20{
+    background-image: url(images/imagen_23.webp);
+    grid-column: 1/2;
+    grid-row: 20/21;
+}
+.item21{
+    background-image: url(images/imagen_24.webp);
+    grid-column: 1/2;
+    grid-row: 21/22;
+}
+.item22{
+    background-image: url(images/imagen_28.webp);
+    grid-column: 1/2;
+    grid-row: 22/23;
+}
+.item23{
+    background-image: url(images/imagen_29.webp);
+    grid-column: 1/2;
+    grid-row: 23/24;
+}
+.item24{
+    background-image: url(images/imagen_30.webp);
+    grid-column: 1/2;
+    grid-row: 24/25;
+}
+.item25{
+    background-image: url(images/imagen_31.webp);
+    grid-column: 1/2;
+    grid-row: 25/26;
+}
+.item26{
+    background-image: url(images/imagen_32.webp);
+    grid-column: 1/2;
+    grid-row: 26/27;
+}
+.item27{
+    background-image: url(images/imagen_33.webp);
+    grid-column: 1/2;
+    grid-row: 27/28;
+}
+.item28{
+    background-image: url(images/imagen_37.webp);
+    grid-column: 1/2;
+    grid-row: 28/29;
+}
+.item29{
+    background-image: url(images/imagen_38.webp);
+    grid-column: 1/2;
+    grid-row: 29/30;
+}
+.item30{
+    background-image: url(images/imagen_39.webp);
+    grid-column: 1/2;
+    grid-row: 30/31;
+}
+.item31{
+    background-image: url(images/imagen_40.webp);
+    grid-column: 1/2;
+    grid-row: 31/32;
+}
+.item32{
+    background-image: url(images/imagen_41.webp);
+    grid-column: 1/2;
+    grid-row: 32/33;
+}
+.item33{
+    background-image: url(images/imagen_42.webp);
+    grid-column: 1/2;
+    grid-row: 33/34;
+}
+.item34{
+    background-image: url(images/imagen_43.webp);
+    grid-column: 1/2;
+    grid-row: 34/35;
+}
+.item35{
+    background-image: url(images/imagen_44.webp);
+    grid-column: 1/2;
+    grid-row: 35/36;
+}
+.item36{
+    background-image: url(images/imagen_45.webp);
+    grid-column: 1/2;
+    grid-row: 12/13;
+}
 }

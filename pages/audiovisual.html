@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../images/logo_mobile.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos.css">
 
     <title>Audiovisual</title>
@@ -12,25 +13,39 @@
 <body>
 
     <!– Menu de navegación –>
-    <header>
-        <div class="logo">
-            <a href="../index.html"><img src="../images/logo_desktop.svg" alt="Imagen del logo de Manija Studio"></a>
-        </div>
-
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="Audiovisual.html">Audiovisual</a></li>
-                <li><a href="diseno.html">Diseño web</a></li>
-                <li><a href="proyectos.html">Nuestros proyectos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="../images/logo_desktop.svg" alt="Imagen del logo de Manija Studio"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Audiovisual.html">Audiovisual</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="diseno.html">Diseño web</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="proyectos.html">Nuestros proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
             </ul>
-        </nav>
-    </header>
+          </div>
+        </div>
+    </nav>
 
     <!– Main –>
     <main>
-        <div class="contenedor">
+    <div class="container">
+        <div class="row">
+        <div class="contenedor col-lg-2 col-md-2 col-sm-1">
             <h1>La agencia de comunicación que te ayuda a crear conversaciones e historias relevantes <span class="secondary">para la gente que te importa</span></h1>
             <div>
                 <div>
@@ -57,59 +72,69 @@
                 </form>
             </div>
         </div>
-        <div class="imagenPrimaria">
+        <div class="imagenPrimaria col-lg-2 col-md-2 col-sm-1">
             <img src="../images/imagen_34.webp" alt="">
         </div>
-    </main>
+        </div>
+    </div>
+</main>
 
 
     <!– Noticias –>
     <div class="noticias">
-        <p>Solicita tu consultoría gratis</p>
-        <p>-</p>
-        <p>Solicita tu consultoría gratis</p>
-        <p>-</p>
-        <p>Solicita tu consultoría gratis</p>
-        <p>-</p>
-        <p>Solicita tu consultoría gratis</p>
-        <p>-</p>
-        <p>Solicita tu consultoría gratis</p>
-        <p>-</p>
-        <p>Solicita tu consultoría gratis</p>
-        <p>-</p>
-        <p>Solicita tu consultoría gratis</p>
-        <p>-</p>
-        <p>Solicita tu consultoría gratis</p>
+        <p>Solicita tu consultoría gratis - Solicita tu consultoría gratis - Solicita tu consultoría gratis - Solicita tu consultoría gratis - Solicita tu consultoría gratis - Solicita tu consultoría gratis - Solicita tu consultoría gratis - Solicita tu consultoría gratis - Solicita tu consultoría gratis - Solicita tu consultoría gratis - </p>
     </div>
+
 
 
     <!– Módulo 1 –>
     <section class="modulo1">
-        <div class="carrousel">
-            <div>
-                <img src="../images/imagen_2.webp" alt="">
-                <img src="../images/imagen_3.webp" alt="">
-                <img src="../images/imagen_4.webp" alt="">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../images/imagen_2.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/imagen_3.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/imagen_4.webp" class="d-block w-100" alt="...">
+              </div>
             </div>
-    
-            <div>
-                <img src="../images/imagen_5.webp" alt="">
-                <img src="../images/imagen_6.webp" alt="">
-                <img src="../images/imagen_7.webp" alt="">
+          </div>
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../images/imagen_5.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/imagen_6.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/imagen_7.webp" class="d-block w-100" alt="...">
+              </div>
             </div>
-        </div>
-        <div class="moduloTitle">
-            <div>
+          </div>
+
+        <div class="moduloTitle container">
+            <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-1">
                 <p class="maintitle"><span class="secondary">Una agencia de comunicación</span> es como ese amigo tuyo que se sabe el Trivial pero sin quesitos.</p>
             </div>
-            <div class="imagenPrimaria">
+            <div class="imagenPrimaria col-lg-2 col-md-2 col-sm-1">
                 <img src="../images/imagen_35.webp" alt="">
             </div>
         </div>
+        </div>
 
-        <hr>
 
-        <div class="preguntas">
+
+
+
+        <hr class="container">
+
+        <div class="preguntas container">
             <div>
                 <h2>Estrategia y mucho ojo. Nuestro método para planificar una comunicación exitosa.</h2>
             </div>
@@ -129,209 +154,247 @@
             </div>
         </div>
 
-        <hr>
 
-        <div>
-            <div>
-                <h2>Algunas preguntas frecuentes</h2>
-            </div>
-            <div>
-                <a href="">
-                    <h3>¿Qué servicios ofrece una agencia de comunicación?</h3>
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
-            </div>
-            <div>
-            <p>Si te paras a pensarlo mucho, comunicación es todo :-) Podemos ayudarte en la planificación estratégica de la comunicación de tu marca pero también en la activación de las distintas acciones que tus objetivos necesitan. Desde la gestión de redes sociales a la creación de contenidos digitales o la creatividad y el guión de tu próximo vídeo o spot corporativo.</p>
-            </div>
 
-            <hr>
+        <hr class="container">
 
-            <div>
-                <a href="">
-                    <h3>¿Qué puedo esperar de la consultoría gratuita?</h3>
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
-            </div>
-            <div>
-            <p>Te ofrecemos sinceridad y conocimiento sobre si lo que quieres es lo que necesitas. Es fácil: tú respondes a nuestro cuestionario y nosotros lo leemos, investigamos y nos reunimos contigo una hora para profundizar en tu sector y comentarte nuestras recomendaciones. Sin compromiso. Sin costo.</p>
-            </div>
-
-            <hr>
-
-            <div>
-                <a href="">
-                    <h3>¿Con qué equipo cuenta una agencia de comunicación como la tuya?</h3>
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
-            </div>
-            <div>
-            <p>Si le preguntaras al equipo de diseño te diría que hay gente que escribe muy rápido al teclado y que leen mucho. La comunicación está en todo así que nuestro equipo se compone de gente muy curiosa pero ligeramente hipocondriaca que se preocupa mucho por el cambio de significado en una frase si le quitas la coma.</p>
-            </div>
-
-            <hr>
-
-            <div>
-                <a href="">
-                    <h3>¿Cuánto dura un proceso de comunicación corporativa?</h3>
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
-            </div>
-            <div>
-            <p>Hasta el infinito y más allá, que diría el bueno de Buzz. En un proyecto de comunicación podemos limitarnos a la estrategia pero también podemos encargarnos de parte de la activación o ayudarte a encontrar los mejores proveedores para cada fase del plan. Entonces, en realidad, esto depende más de ti que de nosotros así que... ¿Qué te apetece?.</p>
-            </div>
-
-            <hr>
-
-            <div>
-                <a href="">
-                    <h3>¿Cuánto cuesta un proyecto de comunicación?</h3>
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
-            </div>
-
-            <div>
-            <p>Dependiendo un poco del volumen de la organización un plan de comunicación de marca puede rondar desde los $500.000 en pequeñas empresas a... Pero claro, un plan y una estrategia hasta cierto punto no son más que ideas y propuestas para conseguir lo que buscamos. Así que a eso tendrás que sumarle el coste de las acciones que se planteen (algo que en realidad depende de ti ya que el plan tiene que adaptarse a tus recursos, claro).</p>
-            </div>
-            <hr>
+        <div class="container">
+            <h2>Algunas preguntas frecuentes</h2>
         </div>
-    </section>
-    
+        <div class="accordion container" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> ¿Qué puedo esperar de la consultoría gratuita?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Te ofrecemos sinceridad y conocimiento sobre si lo que quieres es lo que necesitas. Es fácil: tú respondes a nuestro cuestionario y nosotros lo leemos, investigamos y nos reunimos contigo una hora para profundizar en tu sector y comentarte nuestras recomendaciones. Sin compromiso. Sin costo.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    ¿Con qué equipo cuenta una agencia de comunicación como la tuya?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                Si le preguntaras al equipo de diseño te diría que hay gente que escribe muy rápido al teclado y que leen mucho. La comunicación está en todo así que nuestro equipo se compone de gente muy curiosa pero ligeramente hipocondriaca que se preocupa mucho por el cambio de significado en una frase si le quitas la coma.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    ¿Cuánto dura un proceso de comunicación corporativa?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                Hasta el infinito y más allá, que diría el bueno de Buzz. En un proyecto de comunicación podemos limitarnos a la estrategia pero también podemos encargarnos de parte de la activación o ayudarte a encontrar los mejores proveedores para cada fase del plan. Entonces, en realidad, esto depende más de ti que de nosotros así que... ¿Qué te apetece?.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    ¿Cuánto cuesta un proyecto de comunicación?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                Dependiendo un poco del volumen de la organización un plan de comunicación de marca puede rondar desde los $500.000 en pequeñas empresas a... Pero claro, un plan y una estrategia hasta cierto punto no son más que ideas y propuestas para conseguir lo que buscamos. Así que a eso tendrás que sumarle el coste de las acciones que se planteen (algo que en realidad depende de ti ya que el plan tiene que adaptarse a tus recursos, claro).
+                </div>
+              </div>
+            </div>
+          </div>
+          </section>
+                
+
+
+
 
     <!– Módulo 2 –>
     <section class="modulo2">
-        <div class="moduloTitle">
-            <div>
+        <div class="container">
+        <div class="moduloTitle row">
+            <div class="col-lg-2 col-md-2 col-sm-1">
                 <div>
                     <p class="maintitle"><span class="terciary">Una agencia de comunicación</span> es como un apacible día soleado en primavera pero a lo mejor llueve.</p>
-                </div>
-                <div>
-                    <p>No te quedes con las ganas y echa un vistazo a nuestros proyectos. Envueltos para regalo. Explicaditos. Canela en rama, para el señor y para la señorita.</p>
-                </div>
-            </div>
-            <div class="imagenPrimaria">
-                <img src="../images/imagen_36.webp" alt="">
-            </div>
+          </div>
+          <div>
+            <p>No te quedes con las ganas y echa un vistazo a nuestros proyectos. Envueltos para regalo. Explicaditos. Canela en rama, para el señor y para la señorita.</p>
+          </div>
+      </div>
+      <div class="imagenPrimaria col-lg-2 col-md-2 col-sm-1">
+          <img src="../images/imagen_36.webp" alt="">
+      </div>
+  </div>
+</div>
+
+
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../images/imagen_37.webp" class="d-block w-100" alt="...">
         </div>
-        <div class="carrousel">
-            <div>
-                <img src="../images/imagen_37.webp" alt="">
-                <img src="../images/imagen_38.webp" alt="">
-                <img src="../images/imagen_39.webp" alt="">
-            </div>
-
-            <div>
-                <img src="../images/imagen_40.webp" alt="">
-                <img src="../images/imagen_41.webp" alt="">
-                <img src="../images/imagen_42.webp" alt="">
-            </div>
-
-            <div>
-                <img src="../images/imagen_43.webp" alt="">
-                <img src="../images/imagen_44.webp" alt="">
-                <img src="../images/imagen_45.webp" alt="">
-            </div>
+        <div class="carousel-item">
+          <img src="../images/imagen_38.webp" class="d-block w-100" alt="...">
         </div>
-    </section>
+        <div class="carousel-item">
+          <img src="../images/imagen_39.webp" class="d-block w-100" alt="...">
+        </div>
+      </div>
+  </div>
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../images/imagen_40.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../images/imagen_41.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../images/imagen_42.webp" class="d-block w-100" alt="...">
+      </div>
+    </div>
+</div>
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../images/imagen_43.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../images/imagen_44.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../images/imagen_45.webp" class="d-block w-100" alt="...">
+      </div>
+    </div>
+</div>
+</section>
 
-    <!– Módulo 3 –>
-    <section class="modulo3">
-        <div class="titleModulo3">
-            <p class="maintitleDark">Sólo hacemos cuatro cosas, pero... <span class="secondary">¡qué cuatro cosas!</span></p>
+
+
+
+
+
+
+    
+
+  <!– Módulo 3 –>
+  <section class="modulo3">
+      <div class="titleModulo3">
+          <p class="maintitleDark">Sólo hacemos cuatro cosas, pero... <span class="secondary">¡qué cuatro cosas!</span></p>
+          <p class="dark">Descubre más sobre los servicios que ofrecemos para ayudar a empresas en estrategia, diseño, comunicación y tecnología.</p>
+      </div>
+
+    
+
+    <div class="cajas">
+        <div class="cajas row">
+        <article class="cajalight col-lg-4 col-md-1 col-sm-1">
+            <div>
+                <h3 class="secondary">Branding</h3>
+                <p  class="dark">Creamos marcas diferenciales desde el diseño estratégico, la creatividad y la narrativa.</p>
+            </div>
+            <div>
+                <a class="dark" href="../index.html">Ver más Branding <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+        </article>
+        
+        <article class="cajadark col-lg-4 col-md-1 col-sm-1">
+            <div>
+                <h3 class="secondary">Audiovisual</h3>
+                <p>Te ayudamos a crear experiencias que comunican (e importan) a tus públicos.</p>
+            </div>
+            <div>
+                <a class="light" href="audiovisual.html">Ver más Audiovisual <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+        </article>
+        
+        <article class="cajalight col-lg-4 col-md-1 col-sm-1">
+            <div>
+                <h3 class="secondary">Diseño web</h3>
+                <p class="dark">Imaginamos campañas creativas alineadas con tus estrategias de negocio.</p>
+            </div>
+            <div>
+                <a class="dark" href="diseno.html">Ver más Diseño web <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+        </article>
+        
+        <article class="cajadark col-lg-4 col-md-1 col-sm-1">
+            <div>
+                <h3 class="secondary">Nuestros proyetos</h3>
+                <p>UI/UX y arquitectura de la información para crear sitios y productos que funcionan.</p>
+            </div>
+            <div>
+                <a class="light" href="proyectos.html">Ver más Nuestros proyetos <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+        </article>
+    </div>
+    </div>
+
+    <div class="servicios container">
+        <div class="row">
+        <div class="col-lg-3 col-md-1 col-sm-1">
+            <p class="maintitleDark">Nuestros servicios como <span class="secondary">agencia de branding</span></p>
             <p class="dark">Descubre más sobre los servicios que ofrecemos para ayudar a empresas en estrategia, diseño, comunicación y tecnología.</p>
         </div>
 
-        <div class="cajas">
-            <article class="cajalight">
-                <div>
-                    <h3 class="secondary">Branding</h3>
-                    <p  class="dark">Creamos marcas diferenciales desde el diseño estratégico, la creatividad y la narrativa.</p>
-                </div>
-                <div>
-                    <a class="dark" href="../index.html">Ver más Branding <i class="fa-solid fa-chevron-right"></i></a>
-                </div>
-            </article>
-            
-            <article class="cajadark">
-                <div>
-                    <h3 class="secondary">Audiovisual</h3>
-                    <p>Te ayudamos a crear experiencias que comunican (e importan) a tus públicos.</p>
-                </div>
-                <div>
-                    <a class="light" href="audiovisual.html">Ver más Audiovisual <i class="fa-solid fa-chevron-right"></i></a>
-                </div>
-            </article>
-            
-            <article class="cajalight">
-                <div>
-                    <h3 class="secondary">Diseño web</h3>
-                    <p class="dark">Imaginamos campañas creativas alineadas con tus estrategias de negocio.</p>
-                </div>
-                <div>
-                    <a class="dark" href="/diseno.html">Ver más Diseño web <i class="fa-solid fa-chevron-right"></i></a>
-                </div>
-            </article>
-            
-            <article class="cajadark">
-                <div>
-                    <h3 class="secondary">Nuestros proyetos</h3>
-                    <p>UI/UX y arquitectura de la información para crear sitios y productos que funcionan.</p>
-                </div>
-                <div>
-                    <a class="light" href="proyectos.html">Ver más Nuestros proyetos <i class="fa-solid fa-chevron-right"></i></a>
-                </div>
-            </article>
-        </div>
-
-        <div class="servicios">
-            <div>
-                <p class="maintitleDark">Nuestros servicios como <span class="secondary">agencia de branding</span></p>
-                <p class="dark">Descubre más sobre los servicios que ofrecemos para ayudar a empresas en estrategia, diseño, comunicación y tecnología.</p>
-            </div>
-
-            <div>
-                <ul>
-                    <li>Consultoría y estrategia de marca</li>
-                    <li>Diseño de logotipos</li>
-                    <li>Arquitectura de marca</li>
-                    <li>Narrativa y Storytelling</li>
-                    <li>Plataforma de Marca</li>
-                    <li>Claims y Taglines</li>
-                    <li>Naming</li>
-                </ul>
-            </div>
-
-            <div>
-                <ul>
-                    <li>Identidad visual</li>
-                    <li>Diseño de identidad corporativa</li>
-                    <li>Relato de marco</li>
-                    <li>Diseño de aplicaciones de marca</li>
-                    <li>Diseño de packaging</li>
-                    <li>Diseño de etiquetas</li>
-                    <li>Señalética</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    
-
-    <!– Footer –>
-    <footer>
-        <div>
-            <a href="../index.html"><img src="../images/logo_desktop.svg" alt="Imagen del logo de Manija Studio"></a>
-        </div>
-        <div>
+        <div class="col-lg-3 col-md-1 col-sm-1">
             <ul>
-                <li><a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
-                <li><a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a href="" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a href="" target="_blank"><i class="fa-brands fa-behance"></i></a></li>
+                <li>Consultoría y estrategia de marca</li>
+                <li>Diseño de logotipos</li>
+                <li>Arquitectura de marca</li>
+                <li>Narrativa y Storytelling</li>
+                <li>Plataforma de Marca</li>
+                <li>Claims y Taglines</li>
+                <li>Naming</li>
             </ul>
-            <p class="dark">Todos los derechos están torcidos 2023 © Manija Studio</p>
         </div>
-    </footer>
+
+        <div class="col-lg-3 col-md-1 col-sm-1">
+            <ul>
+                <li>Identidad visual</li>
+                <li>Diseño de identidad corporativa</li>
+                <li>Relato de marco</li>
+                <li>Diseño de aplicaciones de marca</li>
+                <li>Diseño de packaging</li>
+                <li>Diseño de etiquetas</li>
+                <li>Señalética</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</section>
+
+
+<!– Footer –>
+<footer>
+    <div class="container">
+    <div class="row">
+    <div class="logo col-lg-2 col-md-1 col-sm-1">
+        <a href="../index.html"><img src="../images/logo_desktop.svg" alt="Imagen del logo de Manija Studio"></a>
+    </div>
+    <div class="col-lg-2 col-md-1 col-sm-1">
+        <ul>
+            <li><a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+            <li><a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href="" target="_blank"><i class="fa-brands fa-behance"></i></a></li>
+        </ul>
+        <p class="dark">Todos los derechos están torcidos 2023 © Manija Studio</p>
+    </div>
+</div>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
