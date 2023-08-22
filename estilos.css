@@ -393,6 +393,10 @@ hr{
     padding-top: 64px;
 }
 
+.servicios div ul li{
+    font-size: 16px;
+}
+
 
 
 
@@ -909,4 +913,88 @@ main.mainDark div div{
     grid-column: 1/2;
     grid-row: 12/13;
 }
+
+h1{
+    font-size: 24px;
+    line-height: 30px;
+}
+
+h1.light{
+    font-size: 24px;
+    line-height: 30px;
+}
+
+h2{
+    font-size: 18px;
+    line-height: 24px;
+}
+
+h3{
+    font-size: 16px;
+    line-height: 22px;
+}
+
+
+p{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+p.dark{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+p.maintitle{
+    font-size: 30px;
+    line-height: 36px;
+    padding-top: 32px;
+}
+
+p.maintitleDark{
+    font-size: 30px;
+    line-height: 36px;
+}
+
+p.captionlight{
+    font-size: 12px;
+    line-height: 18px;
+}
+
+p.captiondark{
+    font-size: 12px;
+    line-height: 18px;
+}
+
+
+p.legal{
+    font-size: 10px;
+    line-height: 16px;
+}
+
+a{
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.accordion-header button{
+    font-size: 16px;
+}
+
+.accordion-body{
+    font-size: 14px;
+}
+
+footer div ul li i{
+    font-size: 16px;
+}
+
+footer div ul li i:hover{
+    font-size: 16px;
+}
+
+.servicios div ul li{
+    font-size: 12px;
+}
+
 }
