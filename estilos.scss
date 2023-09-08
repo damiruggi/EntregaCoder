@@ -196,7 +196,6 @@ html{
 
     .row{
         justify-content: space-around;
-        align-items: center;
     }
 
 
@@ -269,7 +268,7 @@ html{
     /* Main */
     main{
         background-color: $color_alternative_primary;
-        padding-bottom: 64px;
+        padding: 64px 0;
     }
 
 
@@ -309,6 +308,20 @@ html{
 
     .checkbox{
         display: flex;
+        flex-direction: row;
+    }
+
+    #checkbox {
+        margin-right: 16px;
+        height: 20px;
+        min-width: 20px;
+    }
+
+    #checkbox:hover {
+        margin-right: 16px;
+        height: 20px;
+        min-width: 20px;
+        background-color: #A5A5A5;
     }
 
 
@@ -503,7 +516,7 @@ html{
 
     .mainDark{
         background-color: $color_terciary;
-        padding: 64px;
+        padding: 64px 32px;
         text-align: center;
     }
 
@@ -537,8 +550,70 @@ html{
         padding-bottom: 16px;
     }
 
-    .enviar{
-        width: 100px;
+    #button {
+        background-color: $color_secondary;
+        color: $color_primary;
+        padding: 4px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border: 1px solid $color_secondary;
+    }
+
+    #button:hover {
+        background-color: $color_primary;
+        color: $color_secondary;
+        padding: 4px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border: 1px solid $color_terciary;
+    }
+
+
+    #input{
+        background-color: transparent;
+        color: $color_terciary;
+        padding: 4px 16px;
+        text-align: left;
+        text-decoration: none;
+        display: inline-block;
+        border: 1px solid $color_terciary;
+        width: 100%;
+        
+    }
+
+    #input:hover{
+        background-color: transparent;
+        color: $color_terciary;
+        padding: 4px 16px;
+        text-align: left;
+        text-decoration: none;
+        display: inline-block;
+        border: 1px solid $color_secondary;
+        width: 100%;
+    }
+
+    #inputDark{
+        background-color: transparent;
+        color: $color_primary;
+        padding: 4px 16px;
+        text-align: left;
+        text-decoration: none;
+        display: inline-block;
+        border: 1px solid $color_primary;
+        width: 100%;
+    }
+
+    #inputDark:hover{
+        background-color: transparent;
+        color: $color_primary;
+        padding: 4px 16px;
+        text-align: left;
+        text-decoration: none;
+        display: inline-block;
+        border: 1px solid $color_primary;
+        width: 100%;
     }
 
 

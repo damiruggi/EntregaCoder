@@ -145,7 +145,6 @@ html {
   }
   .row {
     justify-content: space-around;
-    align-items: center;
   }
   .imagenPrimaria img {
     position: sticky;
@@ -189,7 +188,7 @@ html {
   /* Main */
   main {
     background-color: #E5E5E5;
-    padding-bottom: 64px;
+    padding: 64px 0;
   }
   .contenedor {
     flex-direction: column;
@@ -220,6 +219,18 @@ html {
   }
   .checkbox {
     display: flex;
+    flex-direction: row;
+  }
+  #checkbox {
+    margin-right: 16px;
+    height: 20px;
+    min-width: 20px;
+  }
+  #checkbox:hover {
+    margin-right: 16px;
+    height: 20px;
+    min-width: 20px;
+    background-color: #A5A5A5;
   }
   hr {
     color: #FFFFFF;
@@ -353,7 +364,7 @@ html {
   }
   .mainDark {
     background-color: #363636;
-    padding: 64px;
+    padding: 64px 32px;
     text-align: center;
   }
   .mainDark a {
@@ -377,8 +388,63 @@ html {
   .mainDark div form div {
     padding-bottom: 16px;
   }
-  .enviar {
-    width: 100px;
+  #button {
+    background-color: #CCA43B;
+    color: #FFFFFF;
+    padding: 4px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #CCA43B;
+  }
+  #button:hover {
+    background-color: #FFFFFF;
+    color: #CCA43B;
+    padding: 4px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #363636;
+  }
+  #input {
+    background-color: transparent;
+    color: #363636;
+    padding: 4px 16px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #363636;
+    width: 100%;
+  }
+  #input:hover {
+    background-color: transparent;
+    color: #363636;
+    padding: 4px 16px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #CCA43B;
+    width: 100%;
+  }
+  #inputDark {
+    background-color: transparent;
+    color: #FFFFFF;
+    padding: 4px 16px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #FFFFFF;
+    width: 100%;
+  }
+  #inputDark:hover {
+    background-color: transparent;
+    color: #FFFFFF;
+    padding: 4px 16px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #FFFFFF;
+    width: 100%;
   }
   .galeria {
     display: grid;
