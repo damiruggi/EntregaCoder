@@ -240,6 +240,9 @@ html {
     background-color: #363636;
     padding: 64px;
   }
+  .moduloTitle .row {
+    padding-top: 64px;
+  }
   .carrousel div {
     display: flex;
   }
