@@ -1,20 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&display=swap');
-
-/* Variables */ 
-$font: 'Roboto Slab', serif;
-$font_bold: 700;
-$font_medium: 500;
-$font_regular: 400;
-$color_primary: #FFFFFF;
-$color_secondary: #CCA43B;
-$color_terciary: #363636;
-$color_alternative_primary: #E5E5E5;
-$color_alternative_secondary: #242F40;
-$color_grey1: #F2F2F2;
-$color_grey2: #CCCCCC;
-$color_grey3: #A5A5A5;
-$color_grey4: #7F7F7F;
-$color_grey5: #595959;
+@import "_variables";
 
 
 *{
@@ -43,41 +27,27 @@ html{
     }
 
     body.dark{
-        background-color: #363636;
+        @include dark;
     }
 
     h1{
-        font-size: 32px;
-        font-style: normal;
-        font-weight: $font_bold;
-        line-height: 38px;
-        color: $color_terciary;
-        padding-bottom: 64px;
+        @extend %h1;
+        @include dark;
     }
 
     h1.light{
-        font-size: 32px;
-        font-style: normal;
-        font-weight: $font_bold;
-        line-height: 38px;
-        color: $color_primary;
-        padding-bottom: 64px;
+        @extend %h1;
+        @include light;
     }
 
     h2{
-        font-size: 24px;
-        font-style: normal;
-        font-weight: $font_bold;
-        line-height: 30px;
-        color: $color_primary;
+        @extend %h2;
+        @include light;
     }
 
     h3{
-        font-size: 18px;
-        font-style: normal;
-        font-weight: $font_bold;
-        line-height: 24px;
-        color: $color_primary;
+        @extend %h3;
+        @include light;
     }
 
     h3.secondary{
@@ -85,51 +55,33 @@ html{
     }
 
     p{
-        font-size: 16px;
-        font-style: normal;
-        font-weight: $font_regular;
-        line-height: 22px;
-        color: $color_primary;
+        @extend %p;
+        @include light;
     }
 
     p.dark{
-        font-size: 16px;
-        font-style: normal;
-        font-weight: $font_regular;
-        line-height: 22px;
-        color: $color_terciary
+        @extend %p;
+        @include dark;
     }
 
     p.maintitle{
-        font-size: 40px;
-        font-style: normal;
-        font-weight: $font_bold;
-        line-height: 46px;
-        color: $color_primary;
+        @extend %maintitle;
+        @include light;
     }
 
     p.maintitleDark{
-        font-size: 40px;
-        font-style: normal;
-        font-weight: $font_bold;
-        line-height: 46px;
-        color: $color_terciary;
+        @extend %maintitle;
+        @include dark;
     }
 
     p.captionlight{
-        font-size: 14px;
-        font-style: normal;
-        font-weight: $font_medium;
-        line-height: 20px;
-        color: $color_primary;
+        @extend %caption;
+        @include light;
     }
 
     p.captiondark{
-        font-size: 14px;
-        font-style: normal;
-        font-weight: $font_medium;
-        line-height: 20px;
-        color: $color_terciary;
+        @extend %caption;
+        @include dark;
     }
 
 
@@ -138,16 +90,12 @@ html{
     }
 
     span.terciary{
-        color: $color_terciary;
+        @include dark;
     }
 
     p.legal{
-        font-family: $font;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: $font_regular;
-        line-height: 18px;
-        color: $color_terciary;
+        @extend %legal;
+        @include dark;
     }
 
     a{
@@ -159,11 +107,11 @@ html{
     }
 
     a.light{
-        color: $color_primary;
+        @include light;
     }
 
     a.dark{
-        color: $color_terciary;
+        @include dark;
     }
 
     a:hover{
@@ -173,7 +121,7 @@ html{
     .accordion-header button{
         font-size: 18px;
         font-weight: $font_bold;
-        color: $color_primary;
+        @include light;
         background-color:$color_terciary;
     }
 
@@ -187,11 +135,12 @@ html{
 
     .accordion-body{
         font-size: 16px;
-        color: $color_primary;
+        @include light;
     }
 
     .accordion-item{
-        background-color: $color_terciary;}
+        background-color: $color_terciary;
+    }
 
 
     .row{
@@ -222,7 +171,7 @@ html{
     }
 
     .nav-link{
-        color: $color_terciary;
+        @include dark;
     }
 
     .nav-link:hover{
@@ -256,7 +205,7 @@ html{
 
 
     .noticias p{
-        color: $color_terciary;
+        @include dark;
     }
 
 
@@ -328,7 +277,7 @@ html{
 
 
     hr{
-        color: $color_primary;
+        @include light;
     }
 
 
@@ -369,7 +318,7 @@ html{
     }
 
     .fa-chevron-down{
-        color: $color_primary;
+        @include light;
         width: 24px;
     }
 
@@ -480,7 +429,7 @@ html{
 
     footer div ul li i:hover{
         font-size: 24px;
-        color: $color_terciary;
+        @include dark;
     }
 
 
@@ -510,11 +459,11 @@ html{
     }
 
     .headerDark nav ul li a{
-        color: $color_primary;
+        @include light;
     }
 
     .headerDark nav ul li a:hover{
-        color: $color_secondary;
+        @include dark;
     }
 
 
@@ -525,7 +474,7 @@ html{
     }
 
     .mainDark a{
-        color: $color_primary;
+        @include light;
     }
 
 
@@ -540,7 +489,7 @@ html{
 
 
     .mainDark div form{
-        color: $color_primary;
+        @include light;
     }
 
     .mainDark div form div{
@@ -556,7 +505,7 @@ html{
 
     #button {
         background-color: $color_secondary;
-        color: $color_primary;
+        @include light;
         padding: 4px 16px;
         text-align: center;
         text-decoration: none;
@@ -577,7 +526,7 @@ html{
 
     #input{
         background-color: transparent;
-        color: $color_terciary;
+        @include dark;
         padding: 4px 16px;
         text-align: left;
         text-decoration: none;
@@ -589,7 +538,7 @@ html{
 
     #input:hover{
         background-color: transparent;
-        color: $color_terciary;
+        @include dark;
         padding: 4px 16px;
         text-align: left;
         text-decoration: none;
@@ -600,7 +549,7 @@ html{
 
     #inputDark{
         background-color: transparent;
-        color: $color_primary;
+        @include light;
         padding: 4px 16px;
         text-align: left;
         text-decoration: none;
@@ -611,7 +560,7 @@ html{
 
     #inputDark:hover{
         background-color: transparent;
-        color: $color_primary;
+        @include light;
         padding: 4px 16px;
         text-align: left;
         text-decoration: none;
