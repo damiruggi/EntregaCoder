@@ -1,81 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&display=swap");
 
-/* Variables */ 
-$font: 'Roboto Slab', serif;
+/* Variables */
+$font: "Roboto Slab", serif;
 $font_bold: 700;
 $font_medium: 500;
 $font_regular: 400;
-$color_primary: #FFFFFF;
-$color_secondary: #CCA43B;
+$color_primary: #ffffff;
+$color_secondary: #cca43b;
 $color_terciary: #363636;
-$color_alternative_primary: #E5E5E5;
-$color_alternative_secondary: #242F40;
-$color_grey1: #F2F2F2;
-$color_grey2: #CCCCCC;
-$color_grey3: #A5A5A5;
-$color_grey4: #7F7F7F;
+$color_alternative_primary: #e5e5e5;
+$color_alternative_secondary: #242f40;
+$color_grey1: #f2f2f2;
+$color_grey2: #cccccc;
+$color_grey3: #a5a5a5;
+$color_grey4: #7f7f7f;
 $color_grey5: #595959;
 
-
-%h1{
-    font-size: 32px;
-    font-style: normal;
-    font-weight: $font_bold;
-    line-height: 38px;
-    padding-bottom: 64px;
+%h1 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: $font_bold;
+  line-height: 38px;
+  padding-bottom: 64px;
 }
 
-
-%h2{
-    font-size: 24px;
-    font-style: normal;
-    font-weight: $font_bold;
-    line-height: 30px;
+%h2 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: $font_bold;
+  line-height: 30px;
 }
 
-
-%h3{
-    font-size: 18px;
-    font-style: normal;
-    font-weight: $font_bold;
-    line-height: 24px;
+%h3 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: $font_bold;
+  line-height: 24px;
 }
 
-
-%p{
-    font-size: 16px;
-    font-style: normal;
-    font-weight: $font_regular;
-    line-height: 22px;
+%p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: $font_regular;
+  line-height: 22px;
 }
 
-%maintitle{
-    font-size: 40px;
-    font-style: normal;
-    font-weight: $font_bold;
-    line-height: 46px;
+%maintitle {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: $font_bold;
+  line-height: 46px;
 }
 
-%caption{
-    font-size: 14px;
-    font-style: normal;
-    font-weight: $font_medium;
-    line-height: 20px;
+%caption {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: $font_medium;
+  line-height: 20px;
 }
 
-%legal{
-    font-family: $font;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: $font_regular;
-    line-height: 18px;
+%legal {
+  font-family: $font;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: $font_regular;
+  line-height: 18px;
 }
-
 
 @mixin light {
-    color: $color_primary;
-  }
+  color: $color_primary;
+}
 
 @mixin dark {
-    color: $color_terciary;
-  }
+  color: $color_terciary;
+}
